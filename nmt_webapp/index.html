@@ -29,7 +29,7 @@
     $( "#translate_button" ).button();
     $( "#translate_button" ).click( function( event ) {
         $.ajax({
-          url: "http://10.110.40.187:5000/translate",
+          url: "http://127.0.0.1:5000/translate",
           type: "GET",                    
           data: {
             text: $( "#src_text" ).val(),
@@ -52,7 +52,7 @@
   <h1>Neural Machine Translation Demo</h1>
   <p>
   <br/>
-  <h4>Running NeMo commit id: v1.0.2  </h4>
+  <h4>Running NeMo commit id: v1.8.0  </h4>
   <br/>
   </p>
   <p>
@@ -60,56 +60,11 @@
     <legend>Select translation direction: </legend>
     <table>
       <tr>
-        <td>
-          <label for="en-de">English to German</label>
-          <input type="radio" name="langpair" id="en-de">
-        </td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td>
-          <label for="de-en">German to English</label>
-          <input type="radio" name="langpair" id="de-en">
-        </td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td>
-          <label for="es-en">Spanish to English</label>
-          <input type="radio" name="langpair" id="es-en">
-        </td>
-	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-	<td>
-	  <label for="en-es" selected="selected">English to Spanish</label>
-	  <input type="radio" name="langpair" id="en-es" checked>
-  </td> 
-      </tr>
-      <tr>
          <td>
-           <label for="en-ru">English to Russian</label>
-           <input type="radio" name="langpair" id="en-ru">
-         </td>
-         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-         <td>
-           <label for="ru-en">Russian to English</label>
-           <input type="radio" name="langpair" id="ru-en">
-         </td>
-         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-         <td>
-           <label for="en-fr">English to French</label>
-	   <input type="radio" name="langpair" id="en-fr">
-	 </td>
-	 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-	 <td>
-	  <label for="fr-en">French to English</label>
-          <input type="radio" name="langpair" id="fr-en">
-         </td>
-         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-         <td>
-          <label for="en-zh">English to Chinese</label>
-          <input type="radio" name="langpair" id="en-zh">
+          <label for="en-hi">English to Hindi</label>
+          <input type="radio" name="langpair" id="en-hi">
          </td>
 	 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-         <td>
-          <label for="zh-en">Chinese to English</label>
-          <input type="radio" name="langpair" id="zh-en">
-         </td>
       </tr>
     </table>
   </fieldset>
